@@ -5,19 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
-import com.example.myapplication.databinding.FragmentMenuBinding
+import com.example.myapplication.databinding.FragmentDetailFavItemBinding
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class MenuFragment : Fragment() {
+class DetailFavItemFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
-    private var _binding: FragmentMenuBinding? = null
 
+    private var _binding: FragmentDetailFavItemBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -29,27 +28,10 @@ class MenuFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentMenuBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentDetailFavItemBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        val logoutButton = binding.logoutButton
-
-
-        logoutButton.setOnClickListener {
-            val navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
-            navController.navigate(R.id.action_menuFragment_to_loginFragment)
-        }
-
-        binding.lista.setOnClickListener{
-
-            findNavController().navigate(R.id.action_menuFragment_to_itemListFragment)
-
-        }
-
-        binding.usuInfo.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_userInfoFragment)
-        }
 
         return view
     }
@@ -60,9 +42,10 @@ class MenuFragment : Fragment() {
     }
 
     companion object {
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MenuFragment().apply {
+            DetailFavItemFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -6,23 +6,29 @@
     tools:context=".MenuFragment">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/navigateToCreditButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ir a la pantalla de créditos" />
 
         <Button
             android:id="@+id/logoutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cerrar sesión" />
+
+        <Button
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a la lista" />
+
+        <Button
+            android:id="@+id/usuInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información del usuario" />
 
     </LinearLayout>
 </FrameLayout>

@@ -32,6 +32,20 @@
         <action
             android:id="@+id/action_menuFragment_to_creditFragment"
             app:destination="@id/FragmentoSegundo" />
+        <action
+            android:id="@+id/action_menuFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
 
     </fragment>
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.myapplication.ItemListFragment"
+        android:label="ItemListFragment" />
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.myapplication.UserInfoFragment"
+        android:label="UserInfoFragment" />
 </navigation>

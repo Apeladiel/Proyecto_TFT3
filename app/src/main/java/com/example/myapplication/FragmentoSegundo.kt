@@ -29,7 +29,7 @@ class FragmentoSegundo : Fragment() {
         _binding = FragmentFragmentoSegundoBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        Picasso.get().load("https://www.google.com/url?sa=i&url=https%3A%2F%2Fleagueoflegends.fandom.com%2Fes%2Fwiki%2FTrue_Damage&psig=AOvVaw0zltSwPltNyoNgiIXlak6P&ust=1707828560706000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPjsm6frpYQDFQAAAAAdAAAAABAE")
+        Picasso.get().load("https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/True_Damage_profileicon.png/revision/latest/smart/width/250/height/250?cb=20191030064641")
             .into(binding.imageViewCredit)
 
 
@@ -39,7 +39,6 @@ class FragmentoSegundo : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        // Nullify binding reference to avoid memory leaks
         _binding = null
     }
 

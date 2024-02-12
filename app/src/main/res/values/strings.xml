@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">TFT APP (Alfa)</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="CustomTextStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TextoCustom</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CustomTitleStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/TituloCustom</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

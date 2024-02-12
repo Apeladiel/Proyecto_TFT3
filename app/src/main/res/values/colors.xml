@@ -6,6 +6,9 @@
     <color name="ModoClaro">#3F51B5</color>
     <color name="ModoOscuro">#303F9F</color>
     <color name="ColorAscendente">#FF4081</color>
+    <color name="TextoCustom">#333333</color>
+    <color name="TituloCustom">#FF0000</color>
+    <color name="BotonCustom">#FFFFFF</color>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Colores personalizados -->
