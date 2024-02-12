@@ -3,5 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_background_color">#3498db</color>
+    <color name="ModoClaro">#3F51B5</color>
+    <color name="ModoOscuro">#303F9F</color>
+    <color name="ColorAscendente">#FF4081</color>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Colores personalizados -->
+        <item name="colorPrimary">@color/ModoClaro</item>
+        <item name="colorPrimaryDark">@color/ModoOscuro</item>
+        <item name="colorAccent">@color/ColorAscendente</item>
+    </style>
 </resources>
